@@ -1,0 +1,390 @@
+{
+  "categories": [
+    {
+      "name": "爬虫核心词汇",
+      "description": "爬虫基础概念与常用术语",
+      "icon": "🕷️",
+      "words": [
+        {
+          "word": "Crawler",
+          "translation": "爬虫程序",
+          "pronunciation": "/ˈkrɔːlər/",
+          "partOfSpeech": "名词",
+          "example": "The crawler extracts data from websites.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Spider",
+          "translation": "网络蜘蛛",
+          "pronunciation": "/ˈspaɪdər/",
+          "partOfSpeech": "名词",
+          "example": "A spider is another name for a crawler.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Scrape",
+          "translation": "抓取",
+          "pronunciation": "/skreɪp/",
+          "partOfSpeech": "动词",
+          "example": "We need to scrape the product prices.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Parse",
+          "translation": "解析",
+          "pronunciation": "/pɑːrz/",
+          "partOfSpeech": "动词",
+          "example": "Parse the HTML to get the title.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Extract",
+          "translation": "提取",
+          "pronunciation": "/ɪkˈstrækt/",
+          "partOfSpeech": "动词",
+          "example": "Extract the data from the HTML.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Bot",
+          "translation": "机器人",
+          "pronunciation": "/bɒt/",
+          "partOfSpeech": "名词",
+          "example": "A bot can automatically fetch web pages.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Fetch",
+          "translation": "获取",
+          "pronunciation": "/fetʃ/",
+          "partOfSpeech": "动词",
+          "example": "The spider fetches the page content.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Automate",
+          "translation": "自动化",
+          "pronunciation": "/ˈɔːtəmeɪt/",
+          "partOfSpeech": "动词",
+          "example": "We can automate the data collection process.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Delay",
+          "translation": "延时",
+          "pronunciation": "/dɪˈleɪ/",
+          "partOfSpeech": "名词",
+          "example": "Add a delay between requests to avoid blocking.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Retry",
+          "translation": "重试",
+          "pronunciation": "/rɪˈtraɪ/",
+          "partOfSpeech": "动词",
+          "example": "Retry the request if it fails.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "name": "网络与HTTP",
+      "description": "请求、响应、状态码等",
+      "icon": "🌐",
+      "words": [
+        {
+          "word": "HTTP",
+          "translation": "超文本传输协议",
+          "pronunciation": "/eɪtʃ tiː tiː piː/",
+          "partOfSpeech": "名词",
+          "example": "HTTP is the foundation of data communication.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "HTTPS",
+          "translation": "安全超文本协议",
+          "pronunciation": "/eɪtʃ tiː tiː piː es/",
+          "partOfSpeech": "名词",
+          "example": "HTTPS encrypts data between client and server.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "GET",
+          "translation": "获取请求",
+          "pronunciation": "/ɡet/",
+          "partOfSpeech": "名词",
+          "example": "Use GET to retrieve data from a server.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "POST",
+          "translation": "提交请求",
+          "pronunciation": "/poʊst/",
+          "partOfSpeech": "名词",
+          "example": "POST is used to send data to a server.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Status Code",
+          "translation": "状态码",
+          "pronunciation": "/ˈsteɪtəs koʊd/",
+          "partOfSpeech": "名词",
+          "example": "200 means success, 404 means not found.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Header",
+          "translation": "请求头",
+          "pronunciation": "/ˈhedər/",
+          "partOfSpeech": "名词",
+          "example": "Set User-Agent in headers to mimic a browser.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Cookie",
+          "translation": "会话缓存",
+          "pronunciation": "/ˈkʊki/",
+          "partOfSpeech": "名词",
+          "example": "Cookies are used to maintain session state.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Session",
+          "translation": "会话",
+          "pronunciation": "/ˈseʃn/",
+          "partOfSpeech": "名词",
+          "example": "A session keeps the user logged in.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Proxy",
+          "translation": "代理",
+          "pronunciation": "/ˈprɒksi/",
+          "partOfSpeech": "名词",
+          "example": "Use a proxy to avoid IP blocking.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Timeout",
+          "translation": "超时",
+          "pronunciation": "/ˈtaɪmaʊt/",
+          "partOfSpeech": "名词",
+          "example": "Set a timeout to avoid hanging requests.",
+          "difficulty": "beginner"
+        }
+      ]
+    },
+    {
+      "name": "解析与提取",
+      "description": "BeautifulSoup、正则表达式",
+      "icon": "📄",
+      "words": [
+        {
+          "word": "BeautifulSoup",
+          "translation": "解析库",
+          "pronunciation": "/ˈbjuːtɪfəl suːp/",
+          "partOfSpeech": "名词",
+          "example": "BeautifulSoup makes parsing HTML easy.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Regex",
+          "translation": "正则表达式",
+          "pronunciation": "/ˈredʒeks/",
+          "partOfSpeech": "名词",
+          "example": "Regex is powerful for pattern matching.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Selector",
+          "translation": "选择器",
+          "pronunciation": "/sɪˈlektər/",
+          "partOfSpeech": "名词",
+          "example": "CSS selectors help locate elements.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Tag",
+          "translation": "标签",
+          "pronunciation": "/tæɡ/",
+          "partOfSpeech": "名词",
+          "example": "HTML tags define the structure of a page.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Attribute",
+          "translation": "属性",
+          "pronunciation": "/əˈtrɪbjuːt/",
+          "partOfSpeech": "名词",
+          "example": "Get the href attribute from an <a> tag.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Find",
+          "translation": "查找",
+          "pronunciation": "/faɪnd/",
+          "partOfSpeech": "动词",
+          "example": "Use find() to locate the first matching element.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "FindAll",
+          "translation": "查找所有",
+          "pronunciation": "/faɪnd ɔːl/",
+          "partOfSpeech": "动词",
+          "example": "find_all() returns a list of matching elements.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Text",
+          "translation": "文本内容",
+          "pronunciation": "/tekst/",
+          "partOfSpeech": "名词",
+          "example": "Use get_text() to extract the inner text.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "Strip",
+          "translation": "去除空白",
+          "pronunciation": "/strɪp/",
+          "partOfSpeech": "动词",
+          "example": "strip=True removes leading and trailing spaces.",
+          "difficulty": "beginner"
+        },
+        {
+          "word": "DOM",
+          "translation": "文档对象模型",
+          "pronunciation": "/dɒm/",
+          "partOfSpeech": "名词",
+          "example": "The DOM represents the HTML structure.",
+          "difficulty": "intermediate"
+        }
+      ]
+    },
+    {
+      "name": "反爬虫",
+      "description": "UA、代理、验证码",
+      "icon": "🛡️",
+      "words": [
+        {
+          "word": "User-Agent",
+          "translation": "用户代理",
+          "pronunciation": "/ˈjuːzər ˈeɪdʒənt/",
+          "partOfSpeech": "名词",
+          "example": "Set User-Agent to mimic a browser.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Anti-spider",
+          "translation": "反爬虫机制",
+          "pronunciation": "/ˈænti ˈspaɪdər/",
+          "partOfSpeech": "名词",
+          "example": "Many websites employ anti-spider techniques.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Captcha",
+          "translation": "验证码",
+          "pronunciation": "/ˈkæptʃə/",
+          "partOfSpeech": "名词",
+          "example": "CAPTCHA is used to block automated bots.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Rate Limit",
+          "translation": "频率限制",
+          "pronunciation": "/reɪt ˈlɪmɪt/",
+          "partOfSpeech": "名词",
+          "example": "Too many requests may trigger a rate limit.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Block",
+          "translation": "封禁",
+          "pronunciation": "/blɒk/",
+          "partOfSpeech": "动词",
+          "example": "Your IP might be blocked if you scrape too fast.",
+          "difficulty": "intermediate"
+        },
+        {
+          "word": "Fingerprint",
+          "translation": "指纹",
+          "pronunciation": "/ˈfɪŋɡəprɪnt/",
+          "partOfSpeech": "名词",
+          "example": "Browser fingerprinting can identify bots.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Selenium",
+          "translation": "自动化工具",
+          "pronunciation": "/sɪˈliːniəm/",
+          "partOfSpeech": "名词",
+          "example": "Selenium can control real browsers to bypass detection.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Headless",
+          "translation": "无头模式",
+          "pronunciation": "/ˈhedləs/",
+          "partOfSpeech": "形容词",
+          "example": "Run Chrome in headless mode for faster scraping.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Bypass",
+          "translation": "绕过",
+          "pronunciation": "/ˈbaɪpæs/",
+          "partOfSpeech": "动词",
+          "example": "Use a proxy to bypass IP blocking.",
+          "difficulty": "advanced"
+        },
+        {
+          "word": "Obfuscate",
+          "translation": "混淆",
+          "pronunciation": "/ˈɒbfʌskeɪt/",
+          "partOfSpeech": "动词",
+          "example": "Some sites obfuscate their HTML to prevent parsing.",
+          "difficulty": "advanced"
+        }
+      ]
+    }
+  ],
+  "regexExamples": [
+    {
+      "name": "手机号",
+      "pattern": "^(13[0-9]|14[5|7]|15[0-9]|18[0-9])\\\\d{8}$",
+      "description": "中国大陆手机号（简单版，支持13/14/15/18开头）",
+      "exampleText": "13812345678"
+    },
+    {
+      "name": "邮箱",
+      "pattern": "^\\\\w+([-+.]\\\\w+)*@\\\\w+([-.]\\\\w+)*\\\\.\\\\w+([-.]\\\\w+)*$",
+      "description": "常见邮箱格式（如 user@example.com）",
+      "exampleText": "test@example.com"
+    },
+    {
+      "name": "身份证",
+      "pattern": "^[1-9]\\\\d{5}[1-9]\\\\d{3}((0\\\\d)|(1[0-2]))(([012]\\\\d)|3[0-1])\\\\d{3}([0-9Xx])$",
+      "description": "18位身份证号码（兼容末尾X）",
+      "exampleText": "11010119900307663X"
+    },
+    {
+      "name": "金额",
+      "pattern": "^[1-9][0-9]*(\\\\.[0-9]{1,2})?$",
+      "description": "正数金额，整数部分≥1，小数部分最多两位",
+      "exampleText": "199.99"
+    },
+    {
+      "name": "纯汉字",
+      "pattern": "^[\\\\u4e00-\\\\u9fa5]+$",
+      "description": "仅中文字符（不含标点）",
+      "exampleText": "爬虫工程师"
+    },
+    {
+      "name": "密码",
+      "pattern": "^[a-zA-Z]\\\\w{5,17}$",
+      "description": "字母开头，长度6~18，仅支持字母/数字/下划线",
+      "exampleText": "Pass1234"
+    }
+  ]
+}

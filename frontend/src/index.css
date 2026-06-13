@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+.dark .bg-card {
+  background-color: #1f2937;
+}
+.dark .border-border {
+  border-color: #374151;
+}
+.dark .text-muted-foreground {
+  color: #9ca3af;
+}
+#app {
+  min-height: 100vh;
+}

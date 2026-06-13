@@ -1,0 +1,14 @@
+com\learning\config\CorsFilter.class
+com\learning\repository\WordCategoryRepository.class
+com\learning\LearningApplication.class
+com\learning\controller\LearningController.class
+com\learning\entity\Word.class
+com\learning\entity\UserWordProgress.class
+com\learning\service\LearningService.class
+com\learning\entity\UserWordProgressId.class
+com\learning\repository\WordRepository.class
+com\learning\entity\RegexExample.class
+com\learning\repository\UserWordProgressRepository.class
+com\learning\DataInitializer.class
+com\learning\entity\WordCategory.class
+com\learning\repository\RegexExampleRepository.class
