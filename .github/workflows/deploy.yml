@@ -1,28 +1,45 @@
 name: Deploy Frontend to GitHub Pages
+
 on:
   push:
     branches: [ main ]
-    paths: ['frontend/**']
+    paths:
+      - 'frontend/**'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: frontend
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npm install
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
       - name: Build
         run: npm run build
         env:
-          VITE_API_BASE_URL: https://your-railway-app.up.railway.app/api
-      - uses: peaceiris/actions-gh-pages@v3
+          VITE_API_BASE_URL: https://你的railway域名.up.railway.app/api   # 替换为实际地址
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./frontend/dist
+          publish_dir: ./dist              # 注意：不是 ./frontend/dist
+          publish_branch: gh-pages
+          force_orphan: true
