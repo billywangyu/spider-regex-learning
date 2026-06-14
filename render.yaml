@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: spider-regex-backend
+    runtime: image
+    repo: https://github.com/billywanyu/spider-regex-learning
+    plan: free
+    envVars:
+      - key: DB_PATH
+        value: jdbc:sqlite:/data/learning.db
+    disk:
+      name: sqlite-data
+      mountPath: /data
+      sizeGB: 1

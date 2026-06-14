@@ -1,10 +1,10 @@
 spring:
   datasource:
-    url: jdbc:sqlite:learning.db
+    url: ${DB_PATH:jdbc:sqlite:learning.db}
     driver-class-name: org.sqlite.JDBC
   jpa:
     hibernate:
       ddl-auto: update
     database-platform: org.sqlite.hibernate.dialect.SQLiteDialect
 server:
-  port: 8080
+  port: ${PORT:8080}
