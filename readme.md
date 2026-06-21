@@ -298,6 +298,8 @@ const displayPattern = computed(() => {
 - 如需扩展功能（如用户登录、多语言支持），可参考现有架构进行二次开发。
 
 ---
+supabase postgre password JRrPx0YqNOh5XvZg
+WWuZ0vlfyrN4fRUR
 
 **文档版本**：1.0  
 **最后更新**：2026-06-13
