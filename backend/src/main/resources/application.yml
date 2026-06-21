@@ -1,19 +1,22 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db.lmsvnaarfaavycynqpum.pooler.supabase.co:6543/postgres?user=postgres&password=WwUz0v1fyrN4fRUR&ssl=true
+    url: jdbc:postgresql://db.lmsvnaarfaavycynqpum.pooler.supabase.co:6543/postgres?user=postgres&password=WwUz0v1fyrN4fRUR&ssl=true&sslmode=require
     driver-class-name: org.postgresql.Driver
     hikari:
-      connection-timeout: 5000      # 5 秒超时，快速失败
-      initialization-fail-timeout: 5000
+      connection-timeout: 10000
+      initialization-fail-timeout: 10000
   jpa:
     hibernate:
       ddl-auto: update
+      default_schema: public           # 关键：限定 Hibernate 只使用 public schema
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
         jdbc:
           lob:
             non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false   # 避免扫描所有 schema
 server:
   port: ${PORT:8080}
 logging:
@@ -21,4 +24,3 @@ logging:
     com.zaxxer.hikari: DEBUG
     org.springframework.jdbc: DEBUG
     org.postgresql: DEBUG
-    org.hibernate: DEBUG
