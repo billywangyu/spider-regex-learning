@@ -1,14 +1,21 @@
 spring:
   datasource:
-    url: jdbc:postgresql://db.lmsvnaarfaavycynqpum.pooler.supabase.co:6543/postgres?user=postgres&password=WwUz0v1fyrN4fRUR&ssl=true&sslmode=require
+    # 使用 Supabase 连接池（Pooler）模式，端口 6543，启用 SSL
+    url: jdbc:postgresql://db.lmsvnaarfaavycynqpum.pooler.supabase.co:6543/postgres?ssl=true&sslmode=require
+    username: postgres
+    password: WwUz0v1fyrN4fRUR
     driver-class-name: org.postgresql.Driver
     hikari:
-      connection-timeout: 10000
-      initialization-fail-timeout: 10000
+      connection-timeout: 10000          # 连接超时 10 秒
+      initialization-fail-timeout: 10000 # 初始化失败超时 10 秒
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 600000
+      max-lifetime: 1800000
   jpa:
     hibernate:
       ddl-auto: update
-      default_schema: public           # 关键：限定 Hibernate 只使用 public schema
+      default_schema: public             # 限定 Hibernate 只使用 public schema
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
@@ -17,6 +24,10 @@ spring:
             non_contextual_creation: true
         temp:
           use_jdbc_metadata_defaults: false   # 避免扫描所有 schema
+        default_schema: public
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
 server:
   port: ${PORT:8080}
 logging:
@@ -24,3 +35,4 @@ logging:
     com.zaxxer.hikari: DEBUG
     org.springframework.jdbc: DEBUG
     org.postgresql: DEBUG
+    org.hibernate: DEBUG
